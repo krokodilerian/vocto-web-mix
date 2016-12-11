@@ -32,12 +32,12 @@ if (empty($_GET['w']) && empty($argv[1])) {
 
 <table>
 <tr>
-<td>	<form method=GET target="tgt" action="/vocto.php" style="float: left;"><input hidden name="w" value="ssp-p"><input type="submit" style="height:50px" value="side-by-side presenter"></form></td>
-<td>	<form method=GET target="tgt" action="/vocto.php" style="float: left;"><input hidden name="w" value="ssp-s"><input type="submit" style="height:50px;" value="side-by-side slides"></form></td>
+<td>	<form method=GET target="tgt" action="/vocto.php" style="float: left;"><input hidden name="room" value="<?php echo $room;?>"><input hidden name="w" value="ssp-p"><input type="submit" style="height:50px" value="side-by-side presenter"></form></td>
+<td>	<form method=GET target="tgt" action="/vocto.php" style="float: left;"><input hidden name="room" value="<?php echo $room;?>"><input hidden name="w" value="ssp-s"><input type="submit" style="height:50px;" value="side-by-side slides"></form></td>
 </tr>
 <tr>
-<td>	<form method=GET target="tgt" action="/vocto.php" style="float: left;"><input hidden name="w" value="fs-p"><input type="submit" style="height:50px" value="fullscreen presenter"></form></td>
-<td>	<form method=GET target="tgt" action="/vocto.php" style="float: left;"><input hidden name="w" value="fs-s"><input type="submit" style="height:50px" value="fullscreen slides"></form></td>
+<td>	<form method=GET target="tgt" action="/vocto.php" style="float: left;"><input hidden name="room" value="<?php echo $room;?>"><input hidden name="w" value="fs-p"><input type="submit" style="height:50px" value="fullscreen presenter"></form></td>
+<td>	<form method=GET target="tgt" action="/vocto.php" style="float: left;"><input hidden name="room" value="<?php echo $room;?>"><input hidden name="w" value="fs-s"><input type="submit" style="height:50px" value="fullscreen slides"></form></td>
 </tr>
 <tr><td colspan=2><img id="output" src="/<?php echo $room;?>/room.jpg" width=480 height=270></td></tr>
 <tr>
